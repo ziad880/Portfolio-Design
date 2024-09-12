@@ -51,17 +51,18 @@ header {
 }
 
 #section-1 {
-    margin-top: 1.2em;
+    margin-top: 1em;
+    margin-left: 6em;
     text-align: center;
     padding: 100px 20px;
     display: flex;
-    justify-content: center;
+
     flex-direction: row; /* الاتجاه الافتراضي */
 }
 
 .image-container {
     position: relative;
-    width: 13em; /* تأكد من ضبط عرض الحاوية بناءً على حجم الصورة الأمامية */
+    width: 18em; /* تأكد من ضبط عرض الحاوية بناءً على حجم الصورة الأمامية */
 }
 
 .background-image {
@@ -84,18 +85,18 @@ header {
     display: inline;
 }
 #section-1 h1 {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 .s1-2 p {
-    font-size: .7em;
+    font-size: .9em;
     display: inline-block; /* يجعل العناصر في نفس السطر */
     margin: 0; /* إزالة المسافات الافتراضية */
     vertical-align: middle; /* محاذاة عمودية في نفس السطر */
 }
 .s1{
     text-align: left;
-    margin-left: 10px;
-    margin-top: 0.8em;
+    margin-left: -15px;
+    margin-top: 2.5em;
     
 }
 .s1-2{
@@ -108,8 +109,17 @@ header {
 }
 
 .s1-3{
-    font-size: .7em;
+    font-size: .8em;
 }
+
+
+.section-2{
+    display: flex;
+    justify-content: center;
+    display: block;
+}
+
+
 
 /* Work Experience Section */
 #work-experience {
