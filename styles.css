@@ -191,6 +191,7 @@ footer {
         margin-left: 15px; /* إضافة بعض التباعد بين الروابط */
     }
     #section-1 {
+        margin: 0;
         flex-direction: column;
         align-items: center; /* محاذاة العناصر في المنتصف */
     }
