@@ -56,7 +56,7 @@ header {
     text-align: center;
     padding: 100px 20px;
     display: flex;
-
+    margin-bottom:-6em ;
     flex-direction: row; /* الاتجاه الافتراضي */
 }
 
@@ -113,13 +113,35 @@ header {
 }
 
 
-.section-2{
-    display: flex;
-    justify-content: center;
-    display: block;
+.section-2 {
+    padding: 20px;
+    margin-left: 8em;
+    color: white;
+    text-align: left; /* محاذاة النص إلى اليسار بشكل افتراضي */
 }
 
+.section-2 h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 
+.section-2 a {
+    color: #ffffffd0;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 5px;
+    transition: color 0.3s ease;
+}
+
+.section-2 a:hover {
+    color: #f82626cf;
+}
+
+.section-2 i {
+    margin-right: 10px;
+    font-size: 1.5em;
+    vertical-align: middle;
+}
 
 /* Work Experience Section */
 #work-experience {
@@ -193,6 +215,7 @@ footer {
     #section-1 {
         margin: 0;
         flex-direction: column;
+        margin-bottom: -1em;
         align-items: center; /* محاذاة العناصر في المنتصف */
     }
 
@@ -202,7 +225,7 @@ footer {
     }
 
     #section-1 h1 {
-        font-size: 1.5em; /* تصغير حجم النص */
+        font-size: 1.7em; /* تصغير حجم النص */
     }
 
     #section-1 h5 {
@@ -210,13 +233,34 @@ footer {
     }
 
     #section-1 p {
-        font-size: .6em; /* تصغير حجم النص */
+        font-size: 1em; /* تصغير حجم النص */
         margin-bottom: -30px;
         margin-top: 10px;
     }
     .work-cards, .project-cards {
         flex-direction: column;
         align-items: center;
+    }
+    .section-2 {
+        text-align: center; /* محاذاة النص إلى المنتصف */
+        margin: 0;
+    }
+
+    .section-2 h1 {
+        font-size: 1.7em; /* تصغير حجم العنوان */
+    }
+
+    .section-2 i {
+        font-size: 1.5em; /* تصغير حجم الأيقونة */
+        margin-right: 8px;
+    }
+
+    .section-2 a {
+        font-size: 1em;
+    }
+    .s2-2{
+        font-size: 1em;
+        
     }
 }
 @media (max-width: 480px) {
@@ -230,7 +274,25 @@ footer {
     }
     
     .gat a {
-        font-size: 0.8em;
+        font-size: 1;
         margin-left: 8px;
+    }
+    .section-2 {
+        margin: 0;
+        padding: 10px; /* تقليل الحواف */
+        text-align: center; /* محاذاة النص في الوسط */
+    }
+
+    .section-2 h1 {
+        font-size: 1.2em;
+    }
+
+    .section-2 i {
+        font-size: 1em;
+    }
+
+    .section-2 a {
+        font-size: 0.8em;
+        margin-left: 3px;
     }
 }
