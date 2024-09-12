@@ -396,6 +396,9 @@ button {
 
         background-size: 150%;
     }
+    .section-4{
+        min-height: 35vh;
+    }
 }
 @media (max-width: 480px) {
     header {
