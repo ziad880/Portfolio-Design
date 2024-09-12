@@ -32,10 +32,10 @@ header {
 .logo {
     transition: .9s ease;
     letter-spacing: 4px;
-    margin: 20px;
+    margin: 30px;
 }
 .logo:hover {
-    transform: scale(1.045);
+    transform: scale(0.9);
 }
 .gat a {
     color: #ffffff9c;
@@ -47,11 +47,11 @@ header {
     transition: 0.5s ease;
 }
 .gat a:hover {
-    color: #f82626cf;
+    color: #7800ba;
 }
 
 #section-1 {
-    margin-top: 1em;
+    margin-top: 0;
     margin-left: 6em;
     text-align: center;
     padding: 100px 20px;
@@ -107,12 +107,9 @@ header {
     color: #726eff;
     text-decoration: none;
 }
-
 .s1-3{
     font-size: .8em;
 }
-
-
 .section-2 {
     padding: 20px;
     margin-left: 8em;
@@ -130,16 +127,17 @@ header {
     text-decoration: none;
     font-weight: bold;
     margin-left: 5px;
+
     transition: color 0.3s ease;
 }
 
 .section-2 a:hover {
-    color: #f82626cf;
+    color: #7800ba;
 }
 
 .section-2 i {
     margin-right: 10px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     vertical-align: middle;
 }
 
@@ -191,7 +189,6 @@ footer {
         justify-content: space-between; /* توزيع العناصر بالتساوي */
         padding: 5px 10px; /* تعديل الحواف لتلائم الشاشة الصغيرة */
         height: auto;
-
     }
     
     .logo {
@@ -211,6 +208,7 @@ footer {
         font-size: .5em; /* ضبط حجم الخط للروابط */
         padding: 10px; /* إضافة مساحة حول الروابط */
         margin-left: 15px; /* إضافة بعض التباعد بين الروابط */
+        margin-right: 30px;
     }
     #section-1 {
         margin: 0;
@@ -225,7 +223,7 @@ footer {
     }
 
     #section-1 h1 {
-        font-size: 1.7em; /* تصغير حجم النص */
+        font-size: 1.9em; /* تصغير حجم النص */
     }
 
     #section-1 h5 {
@@ -233,7 +231,7 @@ footer {
     }
 
     #section-1 p {
-        font-size: 1em; /* تصغير حجم النص */
+        font-size: .7em; /* تصغير حجم النص */
         margin-bottom: -30px;
         margin-top: 10px;
     }
