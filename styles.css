@@ -280,18 +280,15 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.section-4 {
+    background-image: url('imgs/Skills.png');
+    background-size: contain; /* تجعل الصورة تظهر بالكامل، قد تترك بعض المساحات فارغة */
+    background-repeat: no-repeat; /* منع تكرار الصورة */
+    background-position: center center; /* تموضع الصورة في منتصف القسم */
+    background-attachment: scroll; /* اجعل الصورة تتحرك مع المحتوى */
+    min-height: 100vh; /* اجعل الارتفاع لا يقل عن ارتفاع الشاشة */
+    width: 100%; /* عرض القسم بالكامل */
+}
 
 
 
