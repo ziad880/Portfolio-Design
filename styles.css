@@ -154,23 +154,31 @@ footer {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: row;
+        flex-direction: row; /* إبقاء العناصر في صف واحد */
+        align-items: center; /* التأكد من أن جميع العناصر في منتصف الهيدر عموديًا */
+        justify-content: space-between; /* توزيع العناصر بالتساوي */
+        padding: 5px 10px; /* تعديل الحواف لتلائم الشاشة الصغيرة */
         height: auto;
-        padding: 10px 30px;
+
     }
+    
     .logo {
-        font-size: 2em;
-        margin-right: auto;
+        width: 100px; /* تحديد عرض الصورة */
+        height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+        transition: width 0.5s ease; /* إضافة تأثير التحول لتغيير الحجم */
     }
+    
     .gat {
         display: flex;
-        justify-content: flex-end;
-        flex-grow: 1;
-        align-items: center;
+        justify-content: flex-end; /* جعل الروابط في أقصى اليمين */
+        flex-grow: 1; /* تأكيد تمدد القائمة لتغطية المساحة المتاحة */
+        align-items: center; /* محاذاة الروابط بشكل عمودي مع الشعار */
     }
+    
     .gat a {
-        font-size: 1em;
-        padding: 10px;
+        font-size: .5em; /* ضبط حجم الخط للروابط */
+        padding: 10px; /* إضافة مساحة حول الروابط */
+        margin-left: 15px; /* إضافة بعض التباعد بين الروابط */
     }
     #section-1 {
         flex-direction: column;
@@ -200,14 +208,17 @@ footer {
     }
 }
 @media (max-width: 480px) {
-    .logo {
-        font-size: 1.5em;
-    }
-    .gat a {
-        font-size: 0.9em;
-        padding-left: 15px;
-    }
     header {
-        padding: 10px 20px;
+        padding: 5px 10px;
+        height: 60px;
+    }
+    
+    .logo img {
+        width: 20px; /* تقليل عرض الصورة بشكل أكبر */
+    }
+    
+    .gat a {
+        font-size: 0.8em;
+        margin-left: 8px;
     }
 }
