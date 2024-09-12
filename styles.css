@@ -198,18 +198,19 @@ footer {
 
     .s1 {
         text-align: center;
+        margin-top: 0;
     }
 
     #section-1 h1 {
-        font-size: 1.9em; /* تصغير حجم النص */
+        font-size: 1.5em; /* تصغير حجم النص */
     }
 
     #section-1 h5 {
-        font-size: 1.1em; /* تصغير حجم النص */
+        font-size: 1em; /* تصغير حجم النص */
     }
 
     #section-1 p {
-        font-size: .9em; /* تصغير حجم النص */
+        font-size: .6em; /* تصغير حجم النص */
         margin-bottom: -30px;
         margin-top: 10px;
     }
