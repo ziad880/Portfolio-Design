@@ -429,7 +429,7 @@ footer {
     }
     
     .gat a {
-        font-size: .8em; /* ضبط حجم الخط للروابط */
+        font-size: .5em; /* ضبط حجم الخط للروابط */
         padding: 10px; /* إضافة مساحة حول الروابط */
         margin-left: 15px; /* إضافة بعض التباعد بين الروابط */
         margin-right: 30px;
@@ -481,8 +481,11 @@ footer {
         font-size: 1em;
     }
     .s2-2{
-        font-size: 1em;
+        font-size: .9em;
         
+    }
+    .s2-3{
+        font-size: .75em;
     }
     .work-cards {
         grid-template-columns: 1fr; /* بطاقة واحدة لكل صف */
@@ -495,14 +498,14 @@ footer {
         width: 95%; /* اجعل البطاقات تأخذ العرض الكامل على الهواتف */
     }
     .card h3 {
-        font-size: 1.2rem; /* تصغير العناوين */
+        font-size: 1rem; /* تصغير العناوين */
     }
     .card p {
-        font-size: 0.7rem; /* تصغير النصوص */
+        font-size: 0.5rem; /* تصغير النصوص */
     }
     .card button {
-    padding: 3px 6px;
-    font-size: .7em;
+    padding: 2px 5px;
+    font-size: .5em;
     }
     .section-3 {
 
