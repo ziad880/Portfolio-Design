@@ -434,3 +434,24 @@ button {
         margin-left: 3px;
     }
 }
+footer {
+    margin-left: 6em;
+    margin-top: 40px; /* المسافة أعلى العنوان */
+    text-align: left; /* محاذاة النص من اليسار */
+    padding: 10px; /* إضافة بعض المسافة حول المحتوى */
+    background-color: #1a0b2e00;
+}
+/* Social Links */
+.socials{
+    margin-top: 5px;
+}
+.socials a {
+    text-decoration: none; /* إزالة الخط السفلي من الروابط */
+    padding: 8px;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+
+.socials a:hover {
+    font-size: 0.8em;
+}
