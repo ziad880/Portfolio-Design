@@ -455,3 +455,12 @@ footer {
 .socials a:hover {
     font-size: 0.8em;
 }
+
+/* تطبيق التنسيق على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    footer {
+margin-left: 2em;
+
+        text-align: left; /* محاذاة النص من اليسار على الشاشات الصغيرة */
+    }
+}
