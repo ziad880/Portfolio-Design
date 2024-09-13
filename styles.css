@@ -249,6 +249,7 @@ button {
     box-shadow: 0 -10px 20px rgb(36, 17, 63); /* ظل خارجي باللون #11071f من الأعلى */
     width: 450px; /* تعيين عرض أكبر لاحتواء النص والصورة */
     align-items: center;
+    margin: 1em;
     gap: 20px; /* المسافة بين الصورة والمحتوى */
 }
 
@@ -293,6 +294,116 @@ button {
 
 
 
+
+
+
+
+/* تنسيق الحاوية الرئيسية */
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 15rem;
+    align-items: center;
+    padding: 4rem;
+}
+
+/* تنسيق المشروع */
+.project {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* تنسيق النصوص */
+.project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-top: 1em;
+    z-index: 2; /* لضمان أن النصوص تكون فوق الصورة */
+    position: relative;
+}
+
+/* تنسيق العنوان */
+.project-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* تنسيق محتوى المشروع */
+.project-content {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(17, 7, 31, 0.5); /* ظل باستخدام #11071f */
+    z-index: 2;
+}
+
+/* تنسيق حاوية الصورة */
+.image-content {
+    position: absolute;
+    top: 0;
+    width: 55%; /* حجم الصورة */
+    z-index: 1; /* الصورة خلف النص */
+}
+
+/* تنسيق الصورة */
+.image-content img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* المشروع الأول: الصورة على اليمين */
+.left-text .image-content {
+    right: 0;
+}
+
+.left-text .project-text {
+    text-align: left;
+}
+
+/* المشروع الثاني: الصورة على اليمين والنصوص على اليسار */
+.right-text {
+    flex-direction: row-reverse; /* عكس اتجاه العناصر */
+}
+
+.right-text .image-content {
+    left: 0;
+}
+
+.right-text .project-text {
+    text-align: right;
+}
+
+/* التصميم التفاعلي للشاشات الصغيرة */
+@media (max-width: 768px) {
+ 
+}
+footer {
+    margin-left: 6em;
+    margin-top: 15em; /* المسافة أعلى العنوان */
+    text-align: left; /* محاذاة النص من اليسار */
+    padding: 10px; /* إضافة بعض المسافة حول المحتوى */
+    background-color: #1a0b2e00;
+}
+/* Social Links */
+.socials{
+    margin-top: 5px;
+}
+.socials a {
+    text-decoration: none; /* إزالة الخط السفلي من الروابط */
+    padding: 8px;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+
+.socials a:hover {
+    font-size: 0.8em;
+}
 
 
 @media (max-width: 768px) {
@@ -400,6 +511,33 @@ button {
     .section-4{
         min-height: 35vh;
     }
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-text, .image-content {
+        width: 100%;
+    }
+
+    .image-content img {
+        width: 100%; /* تصغير حجم الصورة على الشاشات الصغيرة */
+    }
+
+    .image-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .project-title {
+        text-align: center;
+    }
+    footer {
+    margin-left: 2em;
+    text-align: left; /* محاذاة النص من اليسار على الشاشات الصغيرة */
+    }
 }
 @media (max-width: 480px) {
     header {
@@ -432,35 +570,5 @@ button {
     .section-2 a {
         font-size: 0.8em;
         margin-left: 3px;
-    }
-}
-footer {
-    margin-left: 6em;
-    margin-top: 40px; /* المسافة أعلى العنوان */
-    text-align: left; /* محاذاة النص من اليسار */
-    padding: 10px; /* إضافة بعض المسافة حول المحتوى */
-    background-color: #1a0b2e00;
-}
-/* Social Links */
-.socials{
-    margin-top: 5px;
-}
-.socials a {
-    text-decoration: none; /* إزالة الخط السفلي من الروابط */
-    padding: 8px;
-    margin-left: 5px;
-    transition: 0.5s ease;
-}
-
-.socials a:hover {
-    font-size: 0.8em;
-}
-
-/* تطبيق التنسيق على الشاشات الصغيرة */
-@media (max-width: 768px) {
-    footer {
-margin-left: 2em;
-
-        text-align: left; /* محاذاة النص من اليسار على الشاشات الصغيرة */
     }
 }
