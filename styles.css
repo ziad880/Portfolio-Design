@@ -379,10 +379,10 @@ button {
     text-align: right;
 }
 
-/* التصميم التفاعلي للشاشات الصغيرة */
-@media (max-width: 768px) {
- 
-}
+    .right-text {
+        margin-top: 5em; 
+    }
+
 footer {
     margin-left: 6em;
     margin-top: 15em; /* المسافة أعلى العنوان */
@@ -511,9 +511,13 @@ footer {
     .section-4{
         min-height: 35vh;
     }
+    .projects {
+        padding: 1rem;
+    }
     .project {
         flex-direction: column;
         align-items: center;
+        padding: 1em;
     }
 
     .project-text, .image-content {
@@ -533,11 +537,41 @@ footer {
 
     .project-title {
         text-align: center;
+        font-size: 1.2rem; /* تصغير حجم النصوص */
+    }
+    .project-content {
+        padding: 0.5rem 1rem; /* تقليل حشو الكرت */
+        font-size: 0.7rem; /* تصغير حجم النصوص داخل الكرت */
+    }
+    .project-text h5 {
+        text-align: center; /* توسيط العنوان الفرعي */
+        margin-bottom: .1rem;
+    }
+    /* تعديل margin-top للمشروع الثاني على الشاشات الصغيرة */
+    .right-text {
+        margin-top: -13em; /* تطبيق القيمة الجديدة فقط على الشاشات الصغيرة */
     }
     footer {
+        margin-top: 0em;
     margin-left: 2em;
     text-align: left; /* محاذاة النص من اليسار على الشاشات الصغيرة */
     }
+    footer h2 {
+        font-size: 1.5rem; /* تصغير حجم الخط للعناوين الكبيرة */
+    }
+
+    footer p {
+        font-size: 0.6rem; /* تصغير حجم الخط للنصوص */
+    }
+    .socials {
+        margin-top: 0px;
+    }
+    footer .socials i {
+        font-size: .5rem; /* تصغير حجم أيقونات التواصل الاجتماعي */
+        margin: -1em;
+
+    }
+
 }
 @media (max-width: 480px) {
     header {
@@ -572,3 +606,4 @@ footer {
         margin-left: 3px;
     }
 }
+
